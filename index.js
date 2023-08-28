@@ -10,10 +10,19 @@ let inoki = ["1","2","3","4"];
 //}
 
 //関数
-const test = () => {
-    if (inoki.length > 6) {
+const test = (arg) => {
+    if (inoki.length > arg) {
         console.log("brabara");
     }
     else{
         console.log('borobroo');
 }
+}
+test(6);
+
+//オブジェクト
+const unko2 = {
+    color: "pink",
+    size:"large",
+    purfume:"mint"
+};
