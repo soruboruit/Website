@@ -8,4 +8,9 @@ let inoki = ["1","2","3","4"];
 // console.log(index);
 //    index++;
 //}
-
+if (inoki.length > 6) {
+    console.log("brabara");
+}
+else{
+    console.log('borobroo');
+}
