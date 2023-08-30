@@ -1,37 +1,32 @@
 let unko = "hellloooo!!";
 console.log(unko);
 
-let inoki = ["1","2","3","4"];
+let inoki = ["1", "2", "3", "4"];
 
-//ループ文
-/*
+// Loop statement
 let index = 0;
-while(index < 5){
- console.log(index);
+while (index < inoki.length) {
+    console.log(inoki[index]);
     index++;
 }
-*/
 
-//関数
-/*
+// Function
 const test = (arg) => {
     if (inoki.length > arg) {
         console.log("brabara");
-    }
-    else{
+    } else {
         console.log('borobroo');
-}
-}
-test(6);
-*/
+    }
+};
+test(2);
 
-//オブジェクト
-/*
+// Object
 const unko2 = {
     color: "pink",
-    size:"large",
-    purfume:"mint",
+    size: "large",
+    purfume: "mint"
 };
-*/
 
-window.alert('hello');
+document.getElementsByTagName('button')[1].addEventListener('click', () => {
+    window.alert('hello');
+});
