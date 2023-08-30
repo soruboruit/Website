@@ -34,8 +34,4 @@ const unko2 = {
 };
 */
 
-document.getElementsByTagName("buttom")[0].addEventListener("click", ()=> {
-//命令を書く
-window.alert("Hello World");
-});
-
+window.alert('hello');
