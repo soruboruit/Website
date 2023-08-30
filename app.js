@@ -16,8 +16,8 @@ for (let i = 0; i < answer.length; i++) {
 }
 
 //ボタンをクリックしたら正誤判定
-document.getElementsByTagName('button')[0].addEventListener('click', () => {
-    if (correct === document.getElementsByTagName('button')[0].textContent) {
+buttons[i].addEventListener('click', () => {
+    if (correct === buttons[i].textContent) {
         window.alert('正解！');
     } else {
         window.alert('不正解！');
