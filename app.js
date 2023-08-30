@@ -41,6 +41,7 @@ const quiz = [
 const $question = document.getElementById('js.question');
 const $buttons = document.getElementsByTagName('button');
 let quizIndex = 0;
+let score = 0;
 
 // クイズを表示する関数
 function showQuiz() {
@@ -61,6 +62,7 @@ for (let i = 0; i < $buttons.length; i++) {
         const currentQuiz = quiz[quizIndex];
         if (currentQuiz.correct === $buttons[i].textContent) {
             window.alert('正解！');
+            score++;
         } else {
             window.alert('不正解！');
         }
@@ -70,7 +72,7 @@ for (let i = 0; i < $buttons.length; i++) {
         if (quizIndex < quiz.length) {
             showQuiz();
         } else {
-            window.alert('クイズ終了！');
+            window.alert('クイズ終了！あなたの正解数は' + score + '/' + quiz.length + 'です！');
         }
     });
 }
