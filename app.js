@@ -36,25 +36,41 @@ const quiz = [
         ],
         correct: 'ばれん'
     },
-]
+];
 
-document.getElementById('js.question').textContent = question;
-
-// 定数の文字列をHTMLに反映させる
+const $question = document.getElementById('js.question');
 const $buttons = document.getElementsByTagName('button');
-for (let i = 0; i < answer.length; i++) {
-    $buttons[i].textContent = answer[i];
+let quizIndex = 0;
+
+// クイズを表示する関数
+function showQuiz() {
+    const currentQuiz = quiz[quizIndex];
+    $question.textContent = currentQuiz.question;
+
+    for (let i = 0; i < currentQuiz.answer.length; i++) {
+        $buttons[i].textContent = currentQuiz.answer[i];
+    }
 }
 
-// ボタンをクリックしたら正誤判定
-const buttons = document.getElementsByTagName('button');
-//for文を足して繰り返しのパターン
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', () => {
-        if (correct === buttons[i].textContent) {
+// 初回のクイズ表示
+showQuiz();
+
+// ボタンをクリックしたら正誤判定と次のクイズ表示
+for (let i = 0; i < $buttons.length; i++) {
+    $buttons[i].addEventListener('click', () => {
+        const currentQuiz = quiz[quizIndex];
+        if (currentQuiz.correct === $buttons[i].textContent) {
             window.alert('正解！');
         } else {
             window.alert('不正解！');
+        }
+
+        // 次のクイズへ移動
+        quizIndex++;
+        if (quizIndex < quiz.length) {
+            showQuiz();
+        } else {
+            window.alert('クイズ終了！');
         }
     });
 }
