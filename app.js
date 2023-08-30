@@ -18,31 +18,14 @@ for (let i = 0; i < answer.length; i++) {
 }
 
 // ボタンをクリックしたら正誤判定
-$buttons[0].addEventListener('click', () => {
-    if (correct === $buttons[0].textContent) { 
-       window.alert('正解！'); 
-    } else {
-        window.alert('不正解！');
-    }
-});
-$buttons[1].addEventListener('click', () => {
-    if (correct === $buttons[1].textContent) { 
-       window.alert('正解！'); 
-    } else {
-        window.alert('不正解！');
-    }
-});
-$buttons[2].addEventListener('click', () => {
-    if (correct === $buttons[2].textContent) { 
-       window.alert('正解！'); 
-    } else {
-        window.alert('不正解！');
-    }
-});
-$buttons[3].addEventListener('click', () => {
-    if (correct === $buttons[3].textContent) { 
-       window.alert('正解！'); 
-    } else {
-        window.alert('不正解！');
-    }
-});
+const buttons = document.getElementsByTagName('button');
+//for文を足して繰り返しのパターンを作った
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', () => {
+        if (correct === buttons[i].textContent) {
+            window.alert('正解！');
+        } else {
+            window.alert('不正解！');
+        }
+    });
+}
