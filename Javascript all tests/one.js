@@ -33,3 +33,28 @@ if (number > 10) {
 
 //if文に「else」を組み合わせると「もし〇〇なら●●を行う、そうでなければ■■を行う」という処理ができるようになります。
 //if文の条件がfalseの場合、elseの処理が実行されます。
+
+//かつまたはの使い方
+/*
+// 3通りのオブジェクト型データ（仕事）
+// 条件A：儲かる。　条件B:楽。
+var job_a = { moukaru : true , raku : true };
+var job_b = { moukaru : true , raku : false };
+var job_c = { moukaru : false , raku : false };
+
+// 3通りのデータをそれぞれ条件判定するためのメソッド
+function sigotoSagashi( job ) {
+  if( job.moukaru && job.raku ){
+    console.log("A かつ B の場合、最高です！");
+  } else if( job.moukaru || job.raku ){
+    console.log("A または B なら、はたらきたいです！");
+  } else if( !job.moukaru && !job.raku ){
+    console.log("どちらも満たさないのはいやです！");
+  }
+}
+
+// 実際のメソッド実行部分
+sigotoSagashi( job_a );
+sigotoSagashi( job_b );
+sigotoSagashi( job_c );
+*/
