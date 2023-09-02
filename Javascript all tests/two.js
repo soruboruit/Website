@@ -14,3 +14,17 @@ while (number <= 100) {
 
 //for文
 //繰り返し処理を行う方法として、while文以外にもfor文というものがあります。できることはwhile文と同じですが、while文に比べてシンプルに書くことができるのが特徴です
+
+//if文とfor文を使ったコード　３の倍数と100までの数字
+/*
+for (let number = 1; number<=100; number++) {
+  
+  // if文を用いて、numberが3の倍数の時に「3の倍数です」、そうでないときは数字を出力してください
+  if (number % 3 === 0) {
+    console.log("3の倍数です");
+  } else {
+    console.log(number);
+  }
+  
+}
+*/
