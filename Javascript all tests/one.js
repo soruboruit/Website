@@ -8,6 +8,8 @@ console.log(name);//出力結果：soru
 
  //定数
 
+ //一つの定数に複数の値を入れるには　[]　を使います。
+
 /*
  const $name ="soru";
  console.log($name); //出力結果：soru
