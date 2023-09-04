@@ -34,4 +34,5 @@ for (let number = 1; number<=100; number++) {
 //lengthを用いれば、前の演習のfor文の条件式を右の図のように書き換えることができます。配列の要素数が変わっても問題なく繰り返すことができるので便利です。
 
 //オブジェクト　
-// progressing object 
+// progressing object
+//オブジェクト２ 
