@@ -36,3 +36,4 @@ for (let number = 1; number<=100; number++) {
 //オブジェクト　
 // progressing object
 //オブジェクト２ 
+//progate to learning SQL lessons
