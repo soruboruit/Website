@@ -75,4 +75,9 @@ for (let i = 0; i < $buttons.length; i++) {
             window.alert('クイズ終了！あなたの正解数は' + score + '/' + quiz.length + 'です！');
         }
     });
+
+    
 }
+
+
+
